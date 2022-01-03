@@ -121,8 +121,8 @@ module.exports = _defineProperty;
 const defaults = {
   baseUrl: 'https://webtor.io',
   // baseUrl: 'http://localhost:4000',
-  width: '800px',
-  height: null,
+  width: '100%',
+  height: '100%',
   mode: 'video',
   subtitles: [],
   poster: null,
@@ -419,13 +419,6 @@ function makeEmbeds(els, init = {}) {
     window.webtor.push(clean(data));
   }
 }
-
-window.webtor = Object(_webtor_WebtorGenerator__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(window.webtor);
-makeEmbeds(document.querySelectorAll('video'));
-makeEmbeds(document.querySelectorAll('a[download]'), {
-  mode: 'download',
-  width: '400px'
-});
 
 /***/ }),
 /* 5 */
